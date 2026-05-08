@@ -33,9 +33,9 @@ export default defineConfig({
         dark: './public/logo-dark.svg',
         replacesTitle: true,
       },
-      social: [
-        { icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/company/meetgeo' },
-      ],
+      // social: [
+      //   { icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/company/meetgeo' },
+      // ],
       editLink: {
         baseUrl: 'https://github.com/DebFiore/meetgeo-docs/edit/main/',
       },
