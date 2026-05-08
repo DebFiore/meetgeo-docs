@@ -83,16 +83,9 @@ npm run preview    # local preview of the built site
 ## Customizing the look
 
 - Brand colors: `src/styles/custom.css`
-- Logo: drop SVG at `public/logo.svg` (already referenced in `astro.config.mjs`)
+- Logo: `public/logo-light.svg` (dark theme) and `public/logo-dark.svg` (light theme) — both referenced in `astro.config.mjs`
 - Sidebar order, social links, edit-on-GitHub link: `astro.config.mjs`
 
-## Eat the dog food
+## We use it on our own brand
 
-Once this site is live at `docs.meetgeo.ai`:
-
-1. Add it as a tracked site in MeetGEO's own dashboard.
-2. Watch the AI Visibility Score for the docs site weekly.
-3. Publish a `/about/our-own-ai-visibility-score` page that shows the trend (live testimonial).
-4. Apply MeetGEO's own monitoring + recommendations to improve the docs site's GEO over time.
-
-This is the strongest sales asset MeetGEO has — proof, not pitch.
+`docs.meetgeo.ai` is tracked in MeetGEO's own dashboard — same weekly monitoring, same schema deployment, same scoring customers see. Future: once enough weekly data exists to show a meaningful trajectory, publish that trend publicly as a live proof point.
