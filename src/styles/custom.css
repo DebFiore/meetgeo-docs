@@ -26,6 +26,11 @@
   --sl-color-accent-high: #1e1b4b;
 }
 
+/* Hide the light/dark theme toggle — site is dark-only, on brand. */
+starlight-theme-toggle {
+  display: none;
+}
+
 /* Active sidebar item — brand-gradient highlight matching the dashboard */
 .sidebar-content a[aria-current='page'] {
   background: linear-gradient(135deg, #4F46E5 0%, #9333EA 100%);

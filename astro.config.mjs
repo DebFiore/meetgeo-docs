@@ -22,6 +22,9 @@ export default defineConfig({
     starlight({
       title: 'MeetGEO Docs',
       description: 'How MeetGEO helps your brand get cited by AI engines (ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews).',
+      // Lock to dark mode — matches the MeetGEO dashboard and brand.
+      // No light/dark toggle exposed to users.
+      defaultColorScheme: 'dark',
       // Per-theme logo variants from MeetGEO's official brand kit.
       // logo-dark.svg shows on the dark theme (white wordmark on dark bg);
       // logo-light.svg shows on the light theme (dark wordmark on light bg).
