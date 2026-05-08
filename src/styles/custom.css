@@ -1,0 +1,57 @@
+/* MeetGEO docs theme — overrides Starlight's default colors. */
+/* Brand spec from meetgeo-brand/README.md:                   */
+/*   Primary indigo:  #4F46E5                                */
+/*   Accent violet:   #9333EA                                */
+/*   Brand gradient:  linear-gradient(135deg, #4F46E5 0%, #9333EA 100%) */
+
+:root {
+  /* Dark theme accents (default) */
+  --sl-color-accent-low: #1e1b4b;
+  --sl-color-accent: #4F46E5;
+  --sl-color-accent-high: #c7d2fe;
+
+  --sl-color-white: #ffffff;
+  --sl-color-gray-1: #eeeef0;
+  --sl-color-gray-2: #c2c2c5;
+  --sl-color-gray-3: #8e8e95;
+  --sl-color-gray-4: #5b5b65;
+  --sl-color-gray-5: #353541;
+  --sl-color-gray-6: #24242d;
+  --sl-color-black: #17171f;
+}
+
+:root[data-theme='light'] {
+  --sl-color-accent-low: #c7d2fe;
+  --sl-color-accent: #4F46E5;
+  --sl-color-accent-high: #1e1b4b;
+}
+
+/* Active sidebar item — brand-gradient highlight matching the dashboard */
+.sidebar-content a[aria-current='page'] {
+  background: linear-gradient(135deg, #4F46E5 0%, #9333EA 100%);
+  color: #ffffff;
+}
+
+/* Search input — lift it off the dark page bg so the header doesn't read */
+/* like a terminal. Bumps the button from near-black to a softer slate-gray  */
+/* with a subtle outline. Only affects dark theme; light theme stays default. */
+:root[data-theme='dark'] site-search button[data-open-modal] {
+  background-color: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--sl-color-gray-2);
+}
+
+:root[data-theme='dark'] site-search button[data-open-modal]:hover {
+  background-color: rgba(255, 255, 255, 0.10);
+  border-color: rgba(255, 255, 255, 0.20);
+}
+
+/* Right-sidebar "On this page" TOC — active item.                          */
+/* Default Starlight uses --sl-color-accent (#4F46E5 brand indigo) which is */
+/* low-contrast on the dark page bg. Swap to a pale indigo (Tailwind ~200)  */
+/* and bump weight so the active heading is readably distinct.              */
+:root[data-theme='dark'] starlight-toc nav a[aria-current='true'],
+:root[data-theme='dark'] mobile-starlight-toc nav a[aria-current='true'] {
+  color: #c7d2fe;
+  font-weight: 600;
+}

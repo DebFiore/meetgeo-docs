@@ -1,0 +1,62 @@
+---
+title: What is MeetGEO?
+description: MeetGEO helps your brand get cited by AI engines (ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews). The technical work — structured data, FAQ schema, brand identity, answer-first content — automated and verifiable.
+template: doc
+---
+
+import { Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+**MeetGEO is the autonomous Generative Engine Optimization platform.** We help brands get cited by AI engines — ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews — by deploying the technical infrastructure those engines actually parse from your HTML, then monitoring weekly to show you exactly which queries cite your brand and which cite your competitors.
+
+## The gap is real
+
+When a brand first connects to MeetGEO, their AI Visibility Score almost always lands in the **Critical band (0–20)** — meaning AI engines aren't citing them at all in category-relevant queries. That's the starting line for most brands, regardless of how well they rank in classical SEO. AI citation is a different problem with different solutions, and most brands haven't had anyone do this work specifically yet. The fixes that close the gap are technical, measurable, and verifiable.
+
+## What MeetGEO does for you
+
+<CardGrid>
+  <Card title="Deploy structured data schema" icon="puzzle">
+    Generates and deploys a JSON-LD entity graph (Organization + WebSite + page-level entities, all cross-referenced by `@id`) to every page on your site. This is the single biggest lever for AI citation — verify it any time in your MeetGEO Schema Coverage report.
+  </Card>
+  <Card title="Add FAQPage schema" icon="approve-check">
+    Detects FAQ-shaped content on your site and wraps it in `FAQPage` JSON-LD. AI engines disproportionately cite FAQ-marked content because it's pre-structured into quotable Q&A pairs. Highest-ROI single addition.
+  </Card>
+  <Card title="Monitor weekly across 5 LLMs" icon="magnifier">
+    Every Monday, sends 10 category-relevant queries to ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews. Tracks brand mentions, competitor mentions, sentiment, and which brands the LLMs recommend first.
+  </Card>
+  <Card title="Surface actionable next steps" icon="rocket">
+    The Weekly Insights card converts monitoring data into 2–4 prioritized recommendations — content depth fixes, identity gaps, page-expansion outlines — that you can either delegate to MeetGEO or do yourself.
+  </Card>
+</CardGrid>
+
+We also generate and deploy an `llms.txt` file for your site. It's a proposed standard with low adoption among AI crawlers today, but the deployment cost is near-zero and it's reasonable future-proofing. **It's not where citation impact comes from** — see the [llms.txt page](/concepts/llmstxt/) for where it fits in the priority order.
+
+## Where to start
+
+<LinkCard
+  title="What actually moves the needle"
+  description="The four AI-citation levers ranked by demonstrated impact, with citations and verification methods. Read this first."
+  href="/concepts/what-moves-the-needle/"
+/>
+
+<LinkCard
+  title="What is GEO?"
+  description="The conceptual primer on Generative Engine Optimization. Why AI citation matters and how it differs from classical SEO."
+  href="/concepts/what-is-geo/"
+/>
+
+<LinkCard
+  title="Sign up + free trial"
+  description="7 days, no credit card. Connect your platform and watch your first weekly scan."
+  href="/getting-started/signup/"
+/>
+
+<LinkCard
+  title="AI Visibility Score"
+  description="The single number on your dashboard that summarizes how well AI engines are citing your brand."
+  href="/concepts/ai-visibility-score/"
+/>
+
+## We use it on our own brand
+
+MeetGEO runs MeetGEO on its own marketing site and on this docs site — the same weekly monitoring, the same schema deployment, the same scoring you'll see on your dashboard. The product's promise is testable, and we hold ourselves to it.

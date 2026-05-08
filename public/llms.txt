@@ -1,0 +1,44 @@
+# MeetGEO Documentation
+
+> MeetGEO is the autonomous Generative Engine Optimization platform. We help brands get cited by AI engines (ChatGPT, Claude, Gemini, Perplexity, Google AI Overviews) by deploying the technical infrastructure those engines parse from HTML — JSON-LD entity-graph schema, FAQPage markup, consistent brand identity, and answer-first content structure — then monitoring weekly across all 5 LLMs. This documentation covers MeetGEO's product concepts, how-to guides, and reference material, including a clear-eyed assessment of where each tactic fits in the priority order.
+
+## Introduction
+
+- [What is MeetGEO?](https://docs.meetgeo.ai/): MeetGEO product overview — what it does, who it's for, where to start.
+- [What is GEO?](https://docs.meetgeo.ai/concepts/what-is-geo/): Generative Engine Optimization conceptual primer. Why AI citation matters and how it differs from classical SEO.
+
+## Getting Started
+
+- [Sign up + free trial](https://docs.meetgeo.ai/getting-started/signup/): How to start a 7-day free trial of MeetGEO, what happens during it, and what to expect on day 7.
+- [Connect your platform](https://docs.meetgeo.ai/getting-started/connect-platform/): Step-by-step setup for WordPress, Shopify, Vercel, and Cloudflare integrations.
+- [Your first weekly scan](https://docs.meetgeo.ai/getting-started/first-scan/): What happens during MeetGEO's first weekly LLM monitoring run and how to read the dashboard afterward.
+
+## Core Concepts
+
+- [What actually moves the needle](https://docs.meetgeo.ai/concepts/what-moves-the-needle/): The four AI-citation levers ranked by demonstrated impact (JSON-LD schema, FAQPage schema, brand identity consistency, answer-first content), with citations and verification methods. Includes the honest position on where llms.txt fits (low impact today).
+- [JSON-LD entity graph](https://docs.meetgeo.ai/concepts/entity-graph/): The biggest lever. Why MeetGEO uses entity-graph schema markup with shared @id references instead of flat per-page schema, and how to verify it's live on your site.
+- [Pages to Expand](https://docs.meetgeo.ai/concepts/pages-to-expand/): Answer-first content depth scoring, why thin pages don't get cited by AI engines, and how the Re-scan button gives you results in seconds.
+- [AI Visibility Score](https://docs.meetgeo.ai/concepts/ai-visibility-score/): How MeetGEO's headline metric is calculated, what each band means, and why most new customers start in Critical.
+- [5-LLM monitoring](https://docs.meetgeo.ai/concepts/monitoring/): How MeetGEO probes ChatGPT, Claude, Gemini, Perplexity, and Google AI Overviews each week.
+- [Top Competitors & sentiment](https://docs.meetgeo.ai/concepts/top-competitors/): How MeetGEO identifies competitors from LLM responses and what each metric means.
+- [llms.txt](https://docs.meetgeo.ai/concepts/llmstxt/): What it is, where it fits in the priority order, why MeetGEO still ships it as low-cost future-proofing, and how to customize the file for your site.
+
+## How-To Guides
+
+- [Expand a thin page](https://docs.meetgeo.ai/guides/expand-thin-page/): The full workflow for taking a thin page to Substantial using MeetGEO's outline + Re-scan.
+- [Customize your llms.txt](https://docs.meetgeo.ai/guides/customize-llmstxt/): How to use the Guide Your llms.txt form to control what MeetGEO emphasizes.
+- [Interpret Weekly Insights](https://docs.meetgeo.ai/guides/interpret-weekly-insights/): How to read the four recommendation types and when to delegate vs handle yourself.
+
+## Reference
+
+- [LLM targets](https://docs.meetgeo.ai/reference/llm-targets/): The 5 LLMs MeetGEO monitors weekly with provider, access method, and model.
+- [Schema entity types](https://docs.meetgeo.ai/reference/schema-types/): The schema.org types MeetGEO emits per page type and how they cross-reference.
+- [Glossary](https://docs.meetgeo.ai/reference/glossary/): Definitions for the core MeetGEO terms used across the dashboard, docs, and API responses.
+
+## FAQ
+
+- [Frequently Asked Questions](https://docs.meetgeo.ai/faq/): Quick answers to the most common questions, including troubleshooting.
+
+## Optional
+
+- [MeetGEO product](https://meetgeo.ai): The MeetGEO product itself. Sign up, pricing, marketing-side content.
