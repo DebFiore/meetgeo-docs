@@ -43,6 +43,12 @@ export default defineConfig({
       // Same canonical @id as meetgeo.ai itself — ties this docs site into
       // the parent brand entity graph for AI-engine attribution.
       head: [
+        // Force dark theme before paint — overrides system preference and any
+        // stored localStorage value. Runs before CSS so there's no flash of light.
+        {
+          tag: 'script',
+          content: `document.documentElement.dataset.theme = 'dark';`,
+        },
         {
           tag: 'script',
           attrs: { type: 'application/ld+json' },
